@@ -1,0 +1,181 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Play:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Play:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", serif;
+    font-weight: 500;
+    /* font-weight: 400; */
+}
+.info p,h1{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.logo{
+    padding: 10px;
+    width: 30px;
+}
+.bor1{
+    border: 2px solid black;
+    /* border-radius: 5px; */
+}
+.bor{
+    border: 2px solid rgb(41, 137, 255);
+    /* border-radius: 5px; */
+}
+.flex{
+    display: flex;
+}
+.nav{
+    width: 99.69vw;
+    background-color: rgb(41, 137, 255);
+    align-items: center;
+    color: white;
+}
+.n1{
+    padding: 14px;
+}
+.n1:hover{
+    background-color: rgb(131, 177, 234);
+    border-radius: 4px;
+}   
+.n1 a{
+    /* background-color: rgb(146, 135, 241); */
+    border-radius: 5px;
+    text-decoration: none;
+}
+.left{
+    width: 50vw;
+    height: 65vh;
+    margin: 15px 0px 0px 40px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    /* border-radius: 15px; */
+}
+.right{
+    width: 40vw;
+    height: 65vh;
+    margin: 15px 37px 0px 35px;
+}
+.dayss{
+    height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.dy{
+    padding: 2px 14.8%;
+    /* border-radius: 15px; */
+}
+.dy:hover{
+    background-color: rgb(152, 195, 248);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: large;
+}
+.currrfrom{
+    width: 250px;
+    height: 60px;
+    /* justify-content: center; */
+    /* padding: 0px 0px 0px 30px; */
+    font-size: 19px;
+    /* margin: 28px; */
+    text-align: center;
+    border: 2px solid black;
+    /* border-radius: 15px; */
+}
+.currrto{
+    width: 250px;
+    height: 60px;
+    /* justify-content: center; */
+    /* padding: 0px 0px 0px 30px; */
+    font-size: 19px;
+    /* margin: 28px; */
+    text-align: center;
+    /* border-radius: 15px; */
+    border: 2px solid black;
+    transition: all 0.2s;
+}
+.currrto:hover{
+    background-color: rgb(212, 212, 212);
+    /* font-weight: bolder; */
+}
+.currrfrom:hover{
+    background-color: rgb(212, 212, 212);
+    /* font-weight: bolder; */
+}
+.fr_amnt{
+    width: 245px;
+    height: 60px;
+    /* justify-content: center; */
+    /* padding: 0px 0px 0px 30px; */
+    font-size: 19px;
+    /* margin: 28px; */
+    appearance: none;
+    /* border-radius: 15px; */
+    text-align: center;
+    background-color: rgb(224, 238, 255);
+}
+.to_amnt{
+    width: 245px;
+    height: 60px;
+    /* justify-content: center; */
+    /* padding: 0px 0px 0px 30px; */
+    font-size: 19px;
+    /* margin: 28px; */
+    appearance: none;
+    /* border-radius: 15px; */
+    text-align: center;
+    background-color: rgb(224, 238, 255);
+}
+.topp{
+    padding-top: 25px;
+    gap: 15px;
+}
+.bot{
+    gap: 15px;
+}
+#can{
+    height: auto;
+    width: 490px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+@media only screen and (max-width:1100px) {
+    .topp{
+        flex-direction: column;
+    }
+    .bot{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:1050px) {
+    .cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left,.right{
+        width: 80vw;
+    }
+    .right{
+        margin: 15px 0px 0px 40px;
+    }
+    .dy{
+        padding: 4px 14%;
+        /* border-radius: 15px; */
+    }
+}
+@media only screen and (max-width:315px) {
+    .topp{
+        width:auto;
+    }
+}

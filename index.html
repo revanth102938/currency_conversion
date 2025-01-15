@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="nav bor flex">
+        <div class="logo"><img src="logo.svg" class="lg"></div>
+        <div class="home n1"><a href="">Home</a></div>
+        <div class="about n1"><a href="">About</a></div>
+        <div class="contact n1"><a href="">Contact us</a></div>
+    </div>
+    <div class="info">
+        <h1>Currency converter and Analyser</h1>
+        <p></p>
+    </div>
+    <div class="cont flex">
+        <div class="left bor1 flex">
+            <!-- <form action="/action.php" method="get" id="autosubmit"> -->
+                <div class="topp flex">
+                    <select name="currfr" class="currrfrom" onchange="handlecurr(event)">
+                        <option value="INR">Indian rupee</option>
+                    </select>
+                    <select name="currto" class="currrto" onchange="handlecurr(event)" >
+                        <option value="USD">United States Dollar</option>
+                    </select>
+                </div>
+                <div class="bot flex">
+                    <input type="number" step="0.01" name="fr_amnt" class="fr_amnt" oninput="handleInputChange(event)">
+                    <input type="number" step="0.01" name="to_amnt" class="to_amnt" oninput="handleInputChange(event)">
+                </div>
+                <!-- <div class="cal">
+                    <input type="date" onchange="handledatechange(event)">
+                </div> -->
+        </div>
+        <div class="right bor1">
+            <div class="dayss flex">
+                <div class="thrt dy">30</div>
+                <div class="sxty dy">60</div>
+                <div class="nnty dy">90</div>
+            </div>
+            <canvas id="can"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
